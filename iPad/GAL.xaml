@@ -1,0 +1,33 @@
+﻿<Window x:Class="TalG__MiniProject.GAL"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TalG__MiniProject"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="Gallery" Height="1080" Width="1920">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="78*"/>
+            <RowDefinition Height="421*"/>
+            <RowDefinition Height="74*"/>
+            <RowDefinition Height="427*"/>
+            <RowDefinition Height="72*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="239*"/>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="1230*"/>
+            <ColumnDefinition Width="344*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images\Main\ipad2.png" Stretch="Uniform"/>
+        </Grid.Background>
+        <Image x:Name="btnGLOW2" Source="Images\Main\btnGLOW2.png" Stretch="Fill" Opacity="0" Grid.Row="2" Grid.Column="1" MouseEnter="btnGLOW2_MouseEnter" MouseLeave="btnGLOW2_MouseLeave" MouseDown="btnGLOW2_MouseDown"/>
+        <WebBrowser x:Name="web" Source="https://mail.google.com/" Grid.Column="3" Grid.RowSpan="3" Grid.Row="1"/>
+
+    </Grid>
+</Window>
